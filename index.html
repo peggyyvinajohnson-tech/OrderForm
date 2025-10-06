@@ -1,66 +1,41 @@
-DOCTYPE html>
-
-<html>
-
+!DOCTYPE html>
+<html lang="en">
 <head>
-
-  <title>Order Form</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
 </head>
-
 <body>
 
-  <!-- Main entry point of the project -->
+    <!-- Main entry point of the project -->
 
-  <h1>Place Your Order</h1>
+    <!-- Page Heading -->
+    <h1>Order Form</h1>
+    <p>Please fill out the form below to place your order.</p>
 
-  <form>
+    <!-- Order Form Section -->
+    <form action="#" method="post">
 
-    <label for="name">Name:</label>
+        <!-- Full Name Field -->
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" placeholder="Your full name" required><br><br>
 
-    <input type="text" id="name" name="name" required><br><br>
+        <!-- Email Field -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
 
+        <!-- Product Field -->
+        <label for="product">Product:</label><br>
+        <input type="text" id="product" name="product" placeholder="Product name" required><br><br>
 
+        <!-- Quantity Field -->
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" required><br><br>
 
-    <label for="email">Email:</label>
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Order">
 
-    <input type="email" id="email" name="email" required><br><br>
+    </form>
 
-
-
-    <label for="item">Select Item:</label>
-
-    <select id="item" name="item">
-
-      <option value="pizza">Pizza</option>
-
-      <option value="burger">Burger</option>
-
-      <option value="drink">Drink</option>
-
-    </select><br><br>
-
-
-
-    <label>Delivery:</label>
-
-    <input type="radio" id="pickup" name="delivery" value="pickup" checked>
-
-    <label for="pickup">Pickup</label>
-
-    <input type="radio" id="home" name="delivery" value="home">
-
-    <label for="home">Home Delivery</label><br><br>
-
-
-
-    <label for="notes">Notes:</label>
-
-    <textarea id="notes" name="notes"></textarea><br><br>
-
-
-
-    <button type="submit">Submit Order</button>
-
-
-    
+</body>
+</html>
